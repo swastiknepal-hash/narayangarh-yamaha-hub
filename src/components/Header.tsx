@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Car, Phone, MapPin, Menu } from "lucide-react";
+import { Bike, Phone, MapPin, Menu } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,22 +28,22 @@ const Header = () => {
 
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
-          <div className="flex items-center gap-3">
-            <Car className="h-8 w-8 text-yamaha-blue" />
+          <Link to="/" className="flex items-center gap-3">
+            <Bike className="h-8 w-8 text-yamaha-blue" />
             <div>
               <h1 className="text-xl font-bold text-foreground">Navin Auto Centre</h1>
               <p className="text-xs text-yamaha-blue font-medium">Official Yamaha Dealer</p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            <a href="#home" className="text-foreground hover:text-yamaha-blue transition-colors">Home</a>
-            <a href="#motorcycles" className="text-foreground hover:text-yamaha-blue transition-colors">Motorcycles</a>
-            <a href="#scooters" className="text-foreground hover:text-yamaha-blue transition-colors">Scooters</a>
-            <a href="#service" className="text-foreground hover:text-yamaha-blue transition-colors">Service</a>
-            <a href="#offers" className="text-foreground hover:text-yamaha-blue transition-colors">Offers</a>
-            <a href="#about" className="text-foreground hover:text-yamaha-blue transition-colors">About</a>
+            <Link to="/" className="text-foreground hover:text-yamaha-blue transition-colors">Home</Link>
+            <Link to="/bikes" className="text-foreground hover:text-yamaha-blue transition-colors">Bikes</Link>
+            <Link to="/scooters" className="text-foreground hover:text-yamaha-blue transition-colors">Scooters</Link>
+            <Link to="/services" className="text-foreground hover:text-yamaha-blue transition-colors">Services</Link>
+            <Link to="/offers" className="text-foreground hover:text-yamaha-blue transition-colors">Offers</Link>
+            <Link to="/about" className="text-foreground hover:text-yamaha-blue transition-colors">About</Link>
           </nav>
 
           <div className="flex items-center gap-4">
