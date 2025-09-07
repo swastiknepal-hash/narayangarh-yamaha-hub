@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -46,6 +47,13 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        yamaha: {
+          blue: "hsl(var(--yamaha-blue))",
+          "blue-light": "hsl(var(--yamaha-blue-light))",
+          yellow: "hsl(var(--yamaha-yellow))",
+          silver: "hsl(var(--yamaha-silver))",
+          dark: "hsl(var(--yamaha-dark))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
